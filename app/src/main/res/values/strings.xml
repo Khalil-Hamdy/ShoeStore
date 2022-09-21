@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">ShoeStore</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="welcome_back">welcome back</string>
+    <string name="login_to_continue">login to continue</string>
+    <string name="email">Email</string>
+    <string name="password">password</string>
+    <string name="sign_in">sign in</string>
+    <string name="sign_up">Sign UP</string>
+    <string name="errorlabel">Please enter all fields!</string>
+    <string name="welcome">Welcome</string>
+    <string name="next">Next</string>
+    <string name="instructions">Instructions</string>
+    <string name="desc">Click Next to continue\nand choose your shoes from the shoe list</string>
+</resources>
