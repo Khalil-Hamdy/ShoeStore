@@ -58,22 +58,27 @@ class ShoeList : Fragment() {
         return binding.root
     }
 
+    /*override fun onCreateOptionsMenu(menu: Menu, inflater: MenuInflater) {
+        super.onCreateOptionsMenu(menu, inflater)
+
+        inflater.inflate(R.menu.logout, menu)
+    }*/
     override fun onCreateOptionsMenu(menu: Menu, inflater: MenuInflater) {
-        inflater.inflate(R.menu.menu_details, menu)
+        inflater.inflate(R.menu.logout, menu)
         super.onCreateOptionsMenu(menu, inflater)
     }
 
+
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
-
-
-       return when (item.itemId) {
-            R.id.logout -> {
+        // Handle item selection
+        return when (item.itemId) {
+            R.id.logout1 -> {
                 val action = ShoeListDirections.actionShoeListToLoginFragment()
-                NavHostFragment.findNavController(this).navigate(action)
+                findNavController().navigate(action)
                 true
             }
-           else -> super.onOptionsItemSelected(item)
-       }
+            else -> super.onOptionsItemSelected(item)
+        }
     }
 
 }

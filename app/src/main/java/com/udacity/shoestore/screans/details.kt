@@ -53,6 +53,7 @@ class details : Fragment() {
         return binding.root
     }
 
+
     private  fun navigateToShoeList() {
         val action = detailsDirections.actionDetailsToShoeList2()
         NavHostFragment.findNavController(this).navigate(action)
